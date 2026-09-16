@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 25px;
+        background-color: darkseagreen;
+        color: white;
+      }
+
+      .satu {
+        display: flex;
+      }
+
+      .satu a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        margin: 10px;
+      }
+
+      .satu a:hover {
+        color: maroon;
+      }
+
+      .dua {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+      }
+
+      .teks h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+      }
+
+      .teks button {
+        border-radius: 6px;
+        background-color: dodgerblue;
+        color: white;
+        padding: 10px;
+        border: none;
+      }
+
+      .teks button:hover {
+        background-color: blue;
+      }
+
+      .dua img {
+        border: 1px solid black;
+        border-radius: 15px;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .badge button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: red;
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+        width: 70px;
+        font-weight: bold;
+        border: none;
+      }
+
+      .empat {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 40px;
+        flex-wrap: wrap;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 20px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .card {
+        background: white;
+        width: 250px;
+        border: 1px solid rgb(199, 186, 186);
+        border-radius: 20px;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        margin: 20px;
+      }
+
+      .card:hover {
+        background-color: maroon;
+        color: white;
+      }
+
+      .card button {
+        padding: 10px;
+        border-radius: 5px;
+        width: 90px;
+        background-color: darkseagreen;
+        border: none;
+      }
+
+      .card button:hover {
+        background: rgb(72, 143, 72);
+        color: white;
+      }
+
+      .lima {
+        display: flex;
+      }
+
+      .lima a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        font-size: larger;
+      }
+
+      .lima a:hover {
+        color: maroon;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: darkseagreen;
+        color: white;
+        font-size: 17px;
+        padding: 15px 25px;
+      }
+
+      .atas {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        background: dodgerblue;
+        color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WEB DEVELOPER TEAM</h1>
+      <nav class="satu">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Team">Team</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dua" id="About">
+        <div class="teks">
+          <h1>Selamat Datang</h1>
+
+          <p>
+            Ini adalah contoh penerapan Position dan Display Flex pada halaman
+            website sederhana.
+          </p>
+          <button>Pelajari Lebih Lanjut</button>
+        </div>
+
+        <div class="container">
+          <img src="hiring-web-developer.png" alt="web development team" />
+
+          <div class="badge">
+            <button>NEW</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="empat" id="Team">
+        <div class="card">
+          <img src="JISOO.jpg" alt="JISOO" />
+          <b>JISOO</b>
+          <p>Frontend Developer</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="JENNIE.jpg" alt="JENNIE" />
+          <b>JENNIE</b>
+          <p>Backend Developer</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="ROSE.jpg" alt="ROSE" />
+          <b>ROSE</b>
+          <p>UI Designer</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="LISA.jpg" alt="LISA" />
+          <b>LISA</b>
+          <p>Project Manager</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="CARMEN.jpg" alt="CARMEN" />
+          <b>CARMEN</b>
+          <p>Database Engineer</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="AHYEON.jpg" alt="AHYEON" />
+          <b>AHYEON</b>
+          <p>Quality Assurance</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="JUUN.jpg" alt="JUUN" />
+          <b>JUUN</b>
+          <p>Business Analyst</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="YUHA.jpg" alt="YUHA" />
+          <b>YUHA</b>
+          <p>Mobile Developer</p>
+          <button>Detail</button>
+        </div>
+
+        <div class="card">
+          <img src="IAN.jpg" alt="IAN" />
+          <b>IAN</b>
+          <p>DevOps Engineer</p>
+          <button>Detail</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy;2026 Zatira K.S</div>
+      <nav class="lima" id="Contact">
+        <a
+          href="https://www.instagram.com/tyraa__31?igsh=a3JrZjBqNW5leGti&utm_source=qr"
+          target="_blank"
+        >
+          Instagram
+        </a>
+
+        <a href="https://github.com/" target="_blank"> GitHub </a>
+
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </nav>
+    </footer>
+
+    <a href="#" class="atas">↑</a>
+  </body>
+</html>
